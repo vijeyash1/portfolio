@@ -6,13 +6,13 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div className="bg-yellow-500 text-black">
       <ThemeProvider attribute="class" enableSystem={true}>
         <Navigation />
         <Component {...pageProps} />
         <Footer />
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 
